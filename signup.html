@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0b0f4c8001.js"></script>
+
+</head>
+
+<body>
+    <div class="row mt-5">
+        <div class="col-md-6 m-auto">
+            <div class="card card-body" id="modal-signup">
+                <h1 class="text-center mb-3">
+                    <i class="fas fa-user-plus fa-1x"></i> Sign Up
+                </h1>
+                <form id='signup-form'>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="name" id="name" name="name" class="form-control" placeholder="Enter Name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" class="form-control"
+                            placeholder="Create Password" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password2">Confirm Password</label>
+                        <input type="password" id="password2" name="password2" class="form-control"
+                            placeholder="Confirm Password" />
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-dark btn-block" id="submit">
+                        Register
+                    </button>
+                </form>
+                <div class="mt-4">
+                    <div class="d-flex justify-content-center links">
+                        Already Have an Account? <a href="./login.html" class="ml-2">log In</a>
+                    </div>
+                </div>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- FireBase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
+    <!-- FireBase End-->
+    <script src="./firebase.js"></script>
+    <script src="./signup.js"></script>
+</body>
+
+</html>
